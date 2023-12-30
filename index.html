@@ -11,8 +11,22 @@
             font-size: 30px; /* Change this value to increase or decrease the font size */
         }
         #questionContainer { margin-top: 60px; }
-        #questionImage { max-width: 50%; height: auto;}
-        /* Add any additional styles you need here */
+        
+        #questionImage { 
+        max-width: 400px; /* Maximum width of the image */
+        max-height: 300px; /* Maximum height of the image */
+        width: auto; /* Maintain aspect ratio */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensures the image is a block-level element */
+        margin: 0 auto; /* Center the image */
+    }
+
+
+
+
+
+
+        
     </style>
 </head>
 <body>
@@ -39,17 +53,44 @@
         const questions = [ 
 
           
+
+
+
+
+            
+            { question: "What is inequality being displayed? <br> <br> x ____2 <br> <br> Type <, >, <=, or >= ", answer: "<", imageUrl: "https://oercommons.s3.amazonaws.com/media/courseware/assets/G06/06-math-math-06-9780328761234-studio-articles-images-mth-6-5-10-9_tch_lessthan2.jpg" },
+
+            
+
+            
+
+            { question: "To solve this equation, multiply both sides by ____", answer: "7/5", imageUrl: "https://www.chilimath.com/wp-content/uploads/2020/02/5-over-7-times-a-equals-20.gif" },
+
+
+
+            { question: "To solve this equation, ____ both sides by 6 <br> <br> Type <strong> m </strong> for multiply<br> Type <strong> d </strong> for divide ", answer: "m", imageUrl: "https://static.wikia.nocookie.net/khanacademy/images/b/b7/One-step_multiplication_and_division_equations_with_fractions_and_decimals.PNG/revision/latest/scale-to-width-down/139?cb=20150819151122" },
+            
+            { question: 'Type in the "less than" sign" ', answer: "<", imageUrl: "" },
+
+
+            { question: "What expression is equivalent to 5x + 5<br>a. 10x + 5 - 5x <br>b. 10x <br>c. 5(x - 1)", answer: "a", imageUrl: "" },
+
+            
+
+
              
             { question: "When you multiply the same bases, _____ (type <b>a </b>for add, <b>s </b>for subtract) the exponents.", answer: "a", imageUrl: "https://i.ytimg.com/vi/7gZBCTw2EmI/maxresdefault.jpg" },
-
-
-            { question: "When you divide the same bases, _____ 10(type <b>a </b>for add, <b>s </b>for subtract) the exponents.", answer: "s", imageUrl: "https://i.ytimg.com/vi/khLTbG0VB3Q/maxresdefault.jpg" },
 
             { question: "How many pints in one quart? ____pints ", answer: "2", imageUrl: "https://i.pinimg.com/474x/7b/de/9d/7bde9dc3162ad50a6cb9e1e6cf226d49.jpg" },
 
                
 
             { question: "(-12)(-9) = ", answer: "108", imageUrl: "" },
+
+
+
+
+            { question: "What is inequality being displayed? <br> <br> x ____5 <br> <br> Type <, >, <=, or >= ", answer: ">", imageUrl: "https://o.quizlet.com/xp-EOv5M.yF8ayVdkNNspA.jpg" },
 
 
 
@@ -72,12 +113,19 @@
             { question: "(-7)(-8) = ", answer: "56", imageUrl: "" },
             { question: "(4)(-9) = ", answer: "-36", imageUrl: "" },
             
+            { question: "What is inequality being displayed? <br> <br> x ____-4 <br> <br> Type <, >, <=, or >= ", answer: ">=", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqDpMh8GxmVzD2fWmcsC_q5pc-ep9IB1bj-Q&usqp=CAU" },
+
+
 
             
 
             { question: "(-12)(-8) = ", answer: "96", imageUrl: "" },
 
             { question: "(12)(7) = ", answer: "84", imageUrl: "" },
+
+
+
+            { question: "What is inequality being displayed? <br> <br> x ____2 1/2 <br> <br> Type <, >, <=, or >= ", answer: "<=", imageUrl: "https://img.sparknotes.com/figures/5/50ca5e784bb7e4242910d5b8a571d103/number_line2.gif" },
 
 
 
@@ -95,6 +143,9 @@
 
 
             { question: "(4)(-9) = ", answer: "-36", imageUrl: "" },
+
+            
+            { question: 'Type in the "greater than" sign ', answer: ">", imageUrl: "" },
 
 
 
@@ -124,8 +175,18 @@
 
 
 
+             { question: "To solve 4.5m = 10, ____ both sides by 4.5 <br> <br> Type <strong> m </strong> for multiply<br> Type <strong> d </strong> for divide ", answer: "d", imageUrl: "" },
+
 
                { question: "- 8 - 6 = ", answer: "-14", imageUrl: "" },
+
+
+
+
+               
+
+            { question: "When you divide the same bases, _____ 10(type <b>a </b>for add, <b>s </b>for subtract) the exponents.", answer: "s", imageUrl: "https://i.ytimg.com/vi/khLTbG0VB3Q/maxresdefault.jpg" },
+
 
               { question: "- 9 - 7 = ", answer: "-16", imageUrl: "" },
 
@@ -408,7 +469,7 @@
             if (lastUsedDate !== today) {
                 localStorage.setItem('drillStartTime', Date.now());
                 localStorage.setItem('lastUsedDate', today);
-            } else if (startTime && (Date.now() - startTime) >= 30000) {
+            } else if (startTime && (Date.now() - startTime) >= 60000) {
                 alert(userName + ", you've reached your daily limit. Please come back tomorrow. Current Level: " + currentLevel);
                 
                 // Show the input form
@@ -486,14 +547,33 @@
             } else {
                 mapContainer.style.display = 'none';
             }
+
+            // Clear existing timeout and set a new one
+            clearTimeout(window.answerTimeout);
+            window.answerTimeout = setTimeout(() => {
+                if (answerInput.value === '') {
+                    alert('The correct answer is: ' + question.answer);
+                }
+            }, 3000); // 3 seconds delay
         }
 
+
+
+
+       
+
+
         function checkAnswer(correctAnswer, userAnswer) {
+            clearTimeout(window.answerTimeout); // Clear the timeout if the user answers
             if (userAnswer === correctAnswer) {
                 currentQuestionIndex++;
                 loadNextQuestion();
             }
         }
+
+
+
+
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
