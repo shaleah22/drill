@@ -52,7 +52,88 @@
         
         const questions = [ 
 
-          
+
+
+           //proportions
+          { question: "To find b, multiply a x c and then divide by ____", answer: "d", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF6lxzL9jSw5Zjm36Bmsq0_vYMRSj49MlekAuY2wXi5_wWs7nlWyI9Qp8oGEjj9oIQRUA&usqp=CAU" },
+
+        
+
+        //8.2 fractions decimals and percents
+           { question: "To turn a decimal to a percent move the decimal two places to the _____" , answer: "right", imageUrl: "https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/decimal-to-percent-3-1611293673.png" },
+
+
+
+
+        //7.6 Unit Rate
+           { question: "A unit rate will have a ___ in the denominator" , answer: "1", imageUrl: "https://cdn11.bigcommerce.com/s-wpgom64n7v/images/stencil/1280x1280/products/19719/137817/TPT_Unit_Rates_and_Best_Buy_-_Listed_on_TpT_-_Do_Not_Delete_1__78247.1672421800.png?c=2" },
+
+
+        //7.6 Unit Rate
+           { question: "<strong> Find the unit rate</strong> <br><br>9 pencils for $2.25 is _____ cents per pencil" , answer: "25", imageUrl: "" },
+
+
+        //7.2 comparing ratios
+           { question: "Use < or > to compare the fractions" , answer: "<", imageUrl: "https://emathrrisd.files.wordpress.com/2018/02/crossmultiplications.jpg?w=736" },
+
+          //7.1
+           { question: "<strong> OOOBBBBT</strong> <br>Write a ratio for the number of Bs to the total number of letters." , answer: "1/2", imageUrl: "" },
+
+
+
+        //6.6 inequalities
+           { question: "<strong> at least</strong> is a key phrase for what inequality sign?" , answer: ">=", imageUrl: "" },
+
+             
+
+
+
+
+        //6.3 one step equations
+           { question: "To solve g - 8 = 25, you _____ 8 to both sides of the equation.", answer: "add", imageUrl: "" },
+
+
+            //6.3 one step equations
+           { question: "To solve 150 = e + 42, you _____ 42 from both sides of the equation.", answer: "subtract", imageUrl: "" },
+
+
+
+
+
+
+          //5.1 Evaluate Expressions
+           { question: "Evaluate 4c - 3 when c = -2", answer: "-11", imageUrl: "" },
+
+
+            //5.5 factoring
+           { question: "Factor 21a + 9", answer: "3(7a+3)", imageUrl: "" },
+
+
+             //5.6 adding expressions
+           { question: "Add these expressions (3z + 1) + (5 + 7z)", answer: "10z+6", imageUrl: "" },
+
+
+
+           
+
+
+         { question: "Simplify (3x + 1) - (2x - 1)", answer: "x+2", imageUrl: "" },
+
+
+
+          { question: "Simplify 10x - (-7 + 6x)", answer: "4x+7", imageUrl: "" },
+
+
+
+          { question: "A rational number is any number that can be written as a _______", answer: "fraction", imageUrl: "" },
+
+
+          { question: "A negative exponent in the denominator can be made ________ by moving it to the numerator", answer: "positive", imageUrl: "https://www.chino.k12.ca.us/cms/lib/CA01902308/Centricity/Domain/1734/changelevel.png" },
+
+
+
+          { question: "A negative exponent in the numerator can be made ________ by moving it to the denominator", answer: "positive", imageUrl: "https://www.chino.k12.ca.us/cms/lib/CA01902308/Centricity/Domain/1734/changelevel.png" },
+
 
 
 
@@ -68,18 +149,14 @@
 
 
 
-            { question: "To solve this equation, ____ both sides by 6 <br> <br> Type <strong> m </strong> for multiply<br> Type <strong> d </strong> for divide ", answer: "m", imageUrl: "https://static.wikia.nocookie.net/khanacademy/images/b/b7/One-step_multiplication_and_division_equations_with_fractions_and_decimals.PNG/revision/latest/scale-to-width-down/139?cb=20150819151122" },
-            
+               
             { question: 'Type in the "less than" sign" ', answer: "<", imageUrl: "" },
 
 
-            { question: "What expression is equivalent to 5x + 5<br>a. 10x + 5 - 5x <br>b. 10x <br>c. 5(x - 1)", answer: "a", imageUrl: "" },
-
-            
 
 
              
-            { question: "When you multiply the same bases, _____ (type <b>a </b>for add, <b>s </b>for subtract) the exponents.", answer: "a", imageUrl: "https://i.ytimg.com/vi/7gZBCTw2EmI/maxresdefault.jpg" },
+            { question: "Multiply the same bases? _____ the exponents.", answer: "add", imageUrl: "https://i.ytimg.com/vi/7gZBCTw2EmI/maxresdefault.jpg" },
 
             { question: "How many pints in one quart? ____pints ", answer: "2", imageUrl: "https://i.pinimg.com/474x/7b/de/9d/7bde9dc3162ad50a6cb9e1e6cf226d49.jpg" },
 
@@ -185,7 +262,7 @@
 
                
 
-            { question: "When you divide the same bases, _____ 10(type <b>a </b>for add, <b>s </b>for subtract) the exponents.", answer: "s", imageUrl: "https://i.ytimg.com/vi/khLTbG0VB3Q/maxresdefault.jpg" },
+            { question: "Divide the same bases? _____ the exponents. exponents.", answer: "subtract", imageUrl: "https://i.ytimg.com/vi/khLTbG0VB3Q/maxresdefault.jpg" },
 
 
               { question: "- 9 - 7 = ", answer: "-16", imageUrl: "" },
@@ -469,7 +546,7 @@
             if (lastUsedDate !== today) {
                 localStorage.setItem('drillStartTime', Date.now());
                 localStorage.setItem('lastUsedDate', today);
-            } else if (startTime && (Date.now() - startTime) >= 60000) {
+            } else if (startTime && (Date.now() - startTime) >= 90000) {
                 alert(userName + ", you've reached your daily limit. Please come back tomorrow. Current Level: " + currentLevel);
                 
                 // Show the input form
@@ -495,7 +572,7 @@
             timer = setTimeout(function() {
                 alert("Time's up!");
                 location.reload(); // Reloads the current level
-            }, 30000); // 30 seconds for the entire level
+            }, 45000); // 45 seconds for the entire level
         }
 
         function loadNextQuestion() {
@@ -554,7 +631,7 @@
                 if (answerInput.value === '') {
                     alert('The correct answer is: ' + question.answer);
                 }
-            }, 3000); // 3 seconds delay
+            }, 5000); // 5 seconds delay
         }
 
 
