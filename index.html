@@ -570,6 +570,7 @@
 
        
             
+            
             { question: "How many feet are in one mile?_____feet ", answer: "5280", imageUrl: "" },
 
             
@@ -579,6 +580,26 @@
             { question: "Is 816 divisible by 3?", answer: "yes", imageUrl: "https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/divisibility-rule-of-3-1623326301.png" },
 
              
+          
+
+             
+        
+           
+           { question: " 2 - 3 =  ", answer: "-1", imageUrl: "https://i0.wp.com/math4teaching.com/wp-content/uploads/2010/01/subtracting-positive1.png?ssl=1" },
+
+
+
+
+
+
+        { question: "-6 + 3 = ", answer: "-3", imageUrl: "https://www.math-only-math.com/images/addition-of-integers.png" },
+
+        { question: "What is the square root of 16?  + -____", answer: "4", imageUrl: "https://blog.lib.uiowa.edu/eng/files/2016/03/square_root_square.jpg" },
+        
+        
+
+          { question: "What is the square root? + - ______", answer: "5", imageUrl: "https://qph.cf2.quoracdn.net/main-qimg-2e8abc244702fc332797b945078aa08a.webp" },
+
           
 
 
@@ -605,16 +626,26 @@
 
 
 
+
+        let dailyLimitExceeded = false;
+
+
+
         function startUsageTimer() {
             const today = getTodayString();
             const startTime = localStorage.getItem('drillStartTime');
             const lastUsedDate = localStorage.getItem('lastUsedDate');
 
-            if (lastUsedDate !== today) {
+
+
+
+             if (lastUsedDate !== today) {
                 localStorage.setItem('drillStartTime', Date.now());
                 localStorage.setItem('lastUsedDate', today);
+                dailyLimitExceeded = false; // Reset daily limit status
             } else if (startTime && (Date.now() - startTime) >= 60000) {
                 alert(userName + ", you've reached your daily limit. Please come back tomorrow. Current Level: " + currentLevel);
+                dailyLimitExceeded = true;
                 
                 // Show the input form
                 document.getElementById('limitReachedForm').style.display = 'block';
@@ -624,6 +655,31 @@
                 throw new Error("Daily limit reached");
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         function init() {
             startUsageTimer();
@@ -642,18 +698,28 @@
             }, 20000); // 20 seconds for the entire level
         }
 
-        function loadNextQuestion() {
-            if (currentQuestionIndex >= 5) {
-                clearTimeout(timer);
-                alert("Congratulations. You have mastered this level.");
-                currentLevel++;
-                localStorage.setItem('currentLevel', currentLevel);
-                init();
-                return;
-            }
 
-            displayQuestion(levelQuestions[currentQuestionIndex]);
-        }
+
+
+
+        function loadNextQuestion() {
+          if (dailyLimitExceeded || currentQuestionIndex >= 5) {
+              clearTimeout(timer);
+              if (!dailyLimitExceeded) {
+                  alert("Congratulations. You have mastered this level.");
+                  currentLevel++;
+                  localStorage.setItem('currentLevel', currentLevel);
+              }
+              init();
+              return;
+          }
+
+          displayQuestion(levelQuestions[currentQuestionIndex]);
+      }
+
+
+
+       
 
         function displayQuestion(question) {
             document.getElementById('questionText').innerHTML = question.question;
