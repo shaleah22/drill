@@ -684,6 +684,8 @@
 
         ];
 
+
+
         let currentLevel = parseInt(localStorage.getItem('currentLevel')) || 1;
         let userName = localStorage.getItem('userName') || prompt("Enter your name:");
         localStorage.setItem('userName', userName);
@@ -767,27 +769,25 @@
             timer = setTimeout(function() {
                 alert("Time's up!");
                 location.reload(); // Reloads the current level
-            }, 20000); // 20 seconds for the entire level
+            }, 90000); // 90 seconds for the entire level
         }
 
 
 
 
-
         function loadNextQuestion() {
-          if (dailyLimitExceeded || currentQuestionIndex >= 5) {
-              clearTimeout(timer);
-              if (!dailyLimitExceeded) {
-                  alert("Congratulations. You have mastered this level.");
-                  currentLevel++;
-                  localStorage.setItem('currentLevel', currentLevel);
-              }
-              init();
-              return;
-          }
+            if (dailyLimitExceeded || currentQuestionIndex >= 5) {
+                clearTimeout(timer);
+                if (!dailyLimitExceeded) {
+                    currentLevel++;
+                    localStorage.setItem('currentLevel', currentLevel);
+                }
+                init();
+                return;
+            }
 
-          displayQuestion(levelQuestions[currentQuestionIndex]);
-      }
+            displayQuestion(levelQuestions[currentQuestionIndex]);
+        }
 
 
 
@@ -843,7 +843,7 @@
 
 
        
-
+/*
 
         function checkAnswer(correctAnswer, userAnswer) {
             clearTimeout(window.answerTimeout); // Clear the timeout if the user answers
@@ -853,9 +853,25 @@
             }
         }
 
+*/
 
 
 
+        function checkAnswer(correctAnswer, userAnswer) {
+            clearTimeout(window.answerTimeout); // Clear the timeout if the user answers
+            if (userAnswer === correctAnswer) {
+                currentQuestionIndex++;
+                loadNextQuestion();
+            } else {
+                // Show the correct answer after 5 seconds
+                window.answerTimeout = setTimeout(() => {
+                    alert('The correct answer is: ' + correctAnswer);
+                    loadNextQuestion(); // Load the next question even if the answer is incorrect
+                }, 5000);
+            }
+        }
+
+       
 
         function shuffleArray(array) {
             for (let i = array.length - 1; i > 0; i--) {
