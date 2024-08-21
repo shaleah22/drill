@@ -1626,7 +1626,7 @@
                 localStorage.setItem('lastUsedDate', today);
                 dailyLimitExceeded = false; // Reset daily limit status
             } else if (startTime && (Date.now() - startTime) >= 90000) {
-                alert(userName + ", you've reached your daily limit. Please come back tomorrow. MAKE SURE YOU PRESS THIS BUTTON SO YOU CAN RECORD YOUR LEVEL ON THE NEXT PAGE!!!!!!! Current Level: " + currentLevel);
+                alert(userName + ", you've reached your daily limit. Please come back tomorrow. MAKE SURE YOU PRESS THE OK BUTTON SO YOU CAN RECORD YOUR LEVEL ON THE NEXT PAGE!!!!!!! Current Level: " + currentLevel);
                 dailyLimitExceeded = true;
                 
                 // Show the input form
