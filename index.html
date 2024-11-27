@@ -1,58 +1,44 @@
-November 27 2024 Version
+Nov 27 version
+<br>
+
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Math Drill</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
+        body { font-family: Arial, sans-serif; }
+        #level { position: absolute; top: 10px; right: 10px; font-size: 30px; font-weight: bold; }
+        #question { margin-bottom: 50px;  font-size: 120px;
+            font-size: 120px; /* Change this value to increase or decrease the font size */
         }
-        .container {
-            text-align: center;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        #level, #question, #feedback {
-            font-size: 1.2em;
-            margin-bottom: 15px;
-        }
-        #inputBox {
-            padding: 10px;
-            font-size: 1em;
-            width: 200px;
-            margin-bottom: 15px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 1em;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #0056b3;
-        }
+        #questionContainer { margin-top: 90px; }
+        
+        #questionImage { 
+        max-width: 400px; /* Maximum width of the image */
+        max-height: 300px; /* Maximum height of the image */
+        width: auto; /* Maintain aspect ratio */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensures the image is a block-level element */
+        margin: 0 auto; /* Center the image */
+    }
+
+
+
+
+
+
     </style>
 </head>
 <body>
     <div class="container">
         <div id="userInput">
-            <h3>Enter Your Name to Start</h3>
+            <h3>Type in your name and press Enter to start</h3>
             <input type="text" id="nameInput" placeholder="Enter Name" autofocus>
-            <button id="startButton" onclick="startDrill()">Start</button>
+            
             <p id="output"></p>
         </div>
         <div id="quiz" style="display: none;">
@@ -68,8 +54,6 @@ November 27 2024 Version
         const questions = [
 
 //November 27 2024 Version
-
-
             
 //new questions added august 2024
 
@@ -90,7 +74,7 @@ November 27 2024 Version
             { question: "- 7 - 9  = ", answer: "-16", imageUrl: "https://i.postimg.cc/3NYLrhb1/Screenshot-2024-11-27-at-4-54-56-AM.png" },
             { question: "- 7 - (-9)  = ", answer: "2", imageUrl: "" },
             { question: "4 x 8  = ", answer: "32", imageUrl: "" },
-            { question: "(4)(-9) = ", answer: "-36", imageUrl: "" },
+            { question: "(4)(-9) = ", answer: "-36", imageUrl: "https://i.postimg.cc/50xTWmBY/Screenshot-2024-11-27-at-5-47-39-AM.png" },
             { question: "4 - 9 = ", answer: "-5", imageUrl: "" },
             { question: "6 * 9 = ", answer: "54", imageUrl: "" },
             { question: "-6 + 9 = ", answer: "3", imageUrl: "" },
@@ -835,7 +819,7 @@ if (question.imageUrl) {
         document.getElementById("nameInput").addEventListener("keypress", function(event) {
             if (event.key === "Enter") {
                 event.preventDefault();
-                document.getElementById("startButton").click();
+                startDrill();
             }
         });
     </script>
