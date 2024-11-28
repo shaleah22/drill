@@ -1,4 +1,4 @@
-Nov 27 version
+Nov 28 version
 <br>
 
 <!DOCTYPE html>
@@ -36,7 +36,7 @@ Nov 27 version
 <body>
     <div class="container">
         <div id="userInput">
-            <h3>Type in your name and press Enter to start</h3>
+            <h3>Type in your name and press enter to start</h3>
             <input type="text" id="nameInput" placeholder="Enter Name" autofocus>
             
             <p id="output"></p>
@@ -53,20 +53,21 @@ Nov 27 version
     <script>
         const questions = [
 
-//November 27 2024 Version
+//November 28 2024 Version
             
-//new questions added august 2024
 
-            { question: "-3 - (-9) = ", answer: "6", imageUrl: "" },
-            { question: "-3 - 9 = ", answer: "-12", imageUrl: "https://i.postimg.cc/XNgh7p86/Screenshot-2024-11-26-at-2-58-22-PM.png" },
-            { question: "3 - 9 = ", answer: "-6", imageUrl: "" },
+
+            { question: "-3 - (-9) = ", answer: "6", imageUrl: "https://i.postimg.cc/g2GqzSxD/3-9.gif" },
+            { question: "-9 - 3 = ", answer: "-12", imageUrl: "https://i.postimg.cc/Zn42d5b7/Screenshot-2024-11-28-at-5-44-41-AM.png" },
+            { question: "3 - 9 = ", answer: "-6", imageUrl: "https://i.postimg.cc/XY11B6SL/3-9.gif" },
             { question: "(-3)(-9) = ", answer: "27", imageUrl: "" },
-            { question: " (-7)(-8) = <br>  <br>Hint: 5, 6, 7, 8..56 = 7 x 8", answer: "56", imageUrl: "" },
-            { question: " -7 - 8 = ", answer: "-15", imageUrl: "https://i.postimg.cc/fR4w80G9/Screenshot-2024-11-27-at-4-48-35-AM.png" },
-             { question: " 7 - 8 = ", answer: "-1", imageUrl: "" },
-            { question: "-6 x 7 = ", answer: "-42", imageUrl: "" },
-            { question: "(-4)(7) =  ", answer: "-28", imageUrl: "" },
-            { question: "(-4) + 7 =  ", answer: "3", imageUrl: "" },
+            { question: " (-7)(-8) = ", answer: "56", imageUrl: "" },
+            { question: " -8 - 7 = ", answer: "-15", imageUrl: "https://i.postimg.cc/7ZBYWVjh/Screenshot-2024-11-27-at-9-54-24-AM.png" },
+            { question: "-3 - (-9) = ", answer: "6", imageUrl: "https://i.postimg.cc/g2GqzSxD/3-9.gif" },
+             { question: " 7 - 8 = ", answer: "-1", imageUrl: "https://i.postimg.cc/RZsJHfQr/7-8.gif" },
+            { question: "-6 x 7 = ", answer: "-42", imageUrl: "https://i.postimg.cc/W3n8kbq4/negative-six-times-7.gif" },
+            { question: "(-4)(7) =  ", answer: "-28", imageUrl: "https://i.postimg.cc/2yhyV3Kq/negative-4-times-7.gif" },
+            { question: "(-4) + 7 =  ", answer: "3", imageUrl: "https://i.postimg.cc/Wpnv8Gc9/negative-4-plus-7.gif" },
             { question: "(-4) + (-7) =  ", answer: "-11", imageUrl: "https://i.postimg.cc/pLTDBrFz/Screenshot-2024-11-27-at-4-53-48-AM.png" },
             { question: "5 x 7 =  ", answer: "35", imageUrl: "" },
             { question: "7 x 7  = ", answer: "49", imageUrl: "" },
@@ -83,11 +84,11 @@ Nov 27 version
 //stopped here
             { question: "(-8)(9)  = ", answer: "-72", imageUrl: "" },
             { question: "(-6)(-8) = ", answer: "48", imageUrl: "" },
-            { question: "-8 + (-3) = ", answer: "-11", imageUrl: "" },
+            { question: "-8 + (-3) = ", answer: "-11", imageUrl: "https://i.postimg.cc/hjCB0mXz/Screenshot-2024-11-28-at-5-50-35-AM.png" },
             { question: "-2 - (-9) =", answer: "7", imageUrl: "" },
             { question: "7 - (-4) = ", answer: "11", imageUrl: "" },
             { question: "-4 - 5  = ", answer: "-9", imageUrl: "" },
-            { question: "- 7 - 6  = ", answer: "-13", imageUrl: "" },
+            { question: "- 7 - 6  = ", answer: "-13", imageUrl: "https://i.postimg.cc/wjNGBNH5/Screenshot-2024-11-28-at-5-49-09-AM.png" },
             { question: "(- 7)(- 6)  = ", answer: "42", imageUrl: "" },
             { question: "- 8 - 7 = ", answer: "-15", imageUrl: "" },
             { question: "- 8 - 5  =", answer: "-13", imageUrl: "" },
@@ -693,7 +694,7 @@ Nov 27 version
         let timer;
         let answerTimeout;
         const totalTime = 60000; // 60 seconds for the entire drill
-        const answerDelay = 4000; // 4 seconds before showing correct answer
+        const answerDelay = 7000; // 7 seconds before showing correct answer
 
 
 
