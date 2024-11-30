@@ -1,9 +1,5 @@
-Nov 29 version
-<br>
-
+November 30 edition
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,25 +8,16 @@ Nov 29 version
     <style>
         body { font-family: Arial, sans-serif; }
         #level { position: absolute; top: 10px; right: 10px; font-size: 30px; font-weight: bold; }
-        #question { margin-bottom: 50px;  font-size: 80px;
-            font-size: 80px; /* Change this value to increase or decrease the font size */
-        }
+        #question { margin-bottom: 50px; font-size: 80px; }
         #questionContainer { margin-top: 90px; }
-        
         #questionImage { 
-        max-width: 400px; /* Maximum width of the image */
-        max-height: 300px; /* Maximum height of the image */
-        width: auto; /* Maintain aspect ratio */
-        height: auto; /* Maintain aspect ratio */
-        display: block; /* Ensures the image is a block-level element */
-        margin: 0 auto; /* Center the image */
-    }
-
-
-
-
-
-
+            max-width: 400px; 
+            max-height: 300px; 
+            width: auto; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+        }
     </style>
 </head>
 <body>
@@ -38,11 +25,10 @@ Nov 29 version
         <div id="userInput">
             <h3>Type in your username and press enter to start</h3>
             <input type="text" id="nameInput" placeholder="Enter Name" autofocus>
-            
             <p id="output"></p>
         </div>
         <div id="quiz" style="display: none;">
-<img id="questionImage" style="max-width: 50%; height: auto; margin-bottom: 15px;" src="" alt="Question image" />
+            <img id="questionImage" style="max-width: 50%; height: auto; margin-bottom: 15px;" src="" alt="Question image" />
             <div id="level">Level: 1</div>
             <div id="question">Question goes here</div>
             <input type="text" id="inputBox" placeholder="Type your answer here" disabled />
@@ -51,12 +37,7 @@ Nov 29 version
     </div>
 
     <script>
-        const questions = [
-
-//November 28 2024 Version
-            
-
-
+        const questions = [ 
             { question: "-3 - (-9) = ", answer: "6", imageUrl: "https://i.postimg.cc/brP2T39q/3-9.gif" },
             { question: "-9 - 3 = ", answer: "-12", imageUrl: "https://i.postimg.cc/P5H5s0wj/9-3.gif" },
             { question: "3 - 9 = ", answer: "-6", imageUrl: "https://i.postimg.cc/XY11B6SL/3-9.gif" },
@@ -109,54 +90,11 @@ Nov 29 version
             { question: "5 - 7 = ", answer: "-2", imageUrl: "https://i.postimg.cc/h497ZWwg/5-7.gif" },
 
 
-            
-
-
-
-            //old questions 2023
-            
-          //area of a triangle
-           { question: "Find the area ____ square feet", answer: "6", imageUrl: "https://cdn-academy.pressidium.com/academy/wp-content/uploads/2020/12/FAQ-Area-and-Perimeter-of-a-Triangle-3.png" },
-
-         
-
-        
-         { question: "-4 - 5 = ", answer: "-9", imageUrl: "https://i.postimg.cc/mgLCqXzx/Screenshot-2024-11-26-at-12-44-47-PM.png" },
-
-        
-
-
-            { question: "7 - (-3) = ", answer: "10", imageUrl: "https://i.postimg.cc/4NV1GmQz/10.gif" },
-           
-
-     
-
-
-
-            { question: "3 - (-3) = ", answer: "6", imageUrl: "https://i.postimg.cc/QMhb9qS8/3-3.gif" },
-           
-           
-           
 
         //6.6 inequalities
            { question: " 'at least' is a key phrase for what inequality sign?" , answer: ">=", imageUrl: "" },
 
              
-
-           { question: "-9 + (-4) = ", answer: "-13", imageUrl: "" },
-
-
-          //7.1
-           { question: "<strong> OOBBBT</strong> <br>Write a ratio for the number of Bs to the number of Os." , answer: "3/2", imageUrl: "" },
-
-
-
-
-
-            
-            { question: "(-6)(-8) = ", answer: "48", imageUrl: "" },
-           
-
 
                
             { question: 'Type in the "less than" sign" ', answer: "<", imageUrl: "" },
@@ -164,510 +102,25 @@ Nov 29 version
 
 
 
-           
-               
 
-            { question: "(-12)(-9) = ", answer: "108", imageUrl: "" },
 
-
-
-
-            { question: "What is inequality being displayed? <br> <br> x ____5 <br> <br> Type <, >, <=, or >= ", answer: ">", imageUrl: "https://o.quizlet.com/xp-EOv5M.yF8ayVdkNNspA.jpg" },
-
-
-
-              //Proportions
-              { question: "x  = ____", answer: "30", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwuBJXcVIKJKfWgVEL-Ir6cuxl68StXNLD1s-WLIl5oL_tkZmye5-skCDiV159aBe0PsE&usqp=CAU" },
-
-               { question: "(4)(-9) = ", answer: "-36", imageUrl: "" },
- 
-
-                // One Step Division Equation
-              { question: "What is the value of x", answer: "45", imageUrl: "https://i0.wp.com/www.mathswithmum.com/wp-content/uploads/2021/05/Solving-One-Step-Equations-8.gif?resize=600%2C450&ssl=1" },
-
-            { question: "(-7)(-9) = ", answer: "63", imageUrl: "" },
-            
-
-
-            
-            { question: "(-7)(-8) = ", answer: "56", imageUrl: "" },
-           
-            
-            { question: "What is inequality being displayed? <br> <br> x ____-4 <br> <br> Type <, >, <=, or >= ", answer: ">=", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqDpMh8GxmVzD2fWmcsC_q5pc-ep9IB1bj-Q&usqp=CAU" },
-
-
-
-            
-
-            { question: "(-12)(-8) = ", answer: "96", imageUrl: "" },
-
-            { question: "(12)(7) = ", answer: "84", imageUrl: "" },
-
-
-
-            { question: "What is inequality being displayed? <br> <br> x ____2 1/2 <br> <br> Type <, >, <=, or >= ", answer: "<=", imageUrl: "https://img.sparknotes.com/figures/5/50ca5e784bb7e4242910d5b8a571d103/number_line2.gif" },
-
-
-
-              { question: "- 8 - 9 = ", answer: "-17", imageUrl: "" },
-
-              { question: "- 8 - 3 = ", answer: "-11", imageUrl: "" },
-
-            
-
-            { question: "(-6)(-7) = ", answer: "42", imageUrl: "" },
-
-            { question: "(-7)(-9) = ", answer: "63", imageUrl: "" },
-
-            { question: "(-4)(-7) = ", answer: "28", imageUrl: "" },
-
-
-            
-
-            
-            { question: 'Type in the "greater than" sign ', answer: ">", imageUrl: "" },
-
-
-
-             
-              { question: "- 6 - 7 = ", answer: "-13", imageUrl: "" },
-
-              
-
-            
-
-              
-
-            
-              { question: "- 9 - 5 = ", answer: "-14", imageUrl: "" },
-
-              { question: "What is the prime factorization of 20? <br><br> a. 4 x 5 <br>b. 2 x 10 <br>c. 2 x 2 x 5 <br>Type in letter choice", answer: "c", imageUrl: "" },
-
-              { question: "What expression is equivalent to 3(5x - 2)<br>a. 15x - 2<br>b. 15x - 6<br>c. 15x + 6", answer: "b", imageUrl: "" },
-
-              { question: "(-6)(-12) = ", answer: "72", imageUrl: "" },
-
-
-
-                //one step equation with fraction coefficients
-              { question: "What is the value of h", answer: "18", imageUrl: "https://slideplayer.com/16610066/96/images/slide_4.jpg" },
-
-              { question: "- 8 - 4 = ", answer: "-12", imageUrl: "" },
-
-
-             { question: "To solve 4.5m = 10, ____ both sides by 4.5 <br> <br> Type <strong> m </strong> for multiply<br> Type <strong> d </strong> for divide ", answer: "d", imageUrl: "" },
-
-
-               { question: "- 8 - 6 = ", answer: "-14", imageUrl: "" },
-
-
-
-
-               
-
-            { question: "Divide the same bases? _____ the exponents. exponents.", answer: "subtract", imageUrl: "https://i.ytimg.com/vi/khLTbG0VB3Q/maxresdefault.jpg" },
-
-
-              { question: "- 9 - 7 = ", answer: "-16", imageUrl: "" },
-
-
-
-               // Ordering and Comparing Integers
-            { question: "Which integer has the greater value? -3 or -5", answer: "-3", imageUrl: "https://d20khd7ddkh5ls.cloudfront.net/positives_and_negatives.jpg" },
-
-
-
-            { question: "(4)(-9) = ", answer: "-36", imageUrl: "" },
-
-            // Absolute Value
-            { question: "The absolute value of -3 is ____ ", answer: "3", imageUrl: "https://www.katesmathlessons.com/uploads/1/6/1/0/1610286/published/absolute-value-definition-what-is-absolute-value-what-are-absolute-values-calculator-help-lesson-math-examples.png?1649955410" },
-
-
-            // Absolute Value Operations
-            { question: "Find the value of |-3| - |-2| = ____", answer: "1", imageUrl: "" },
-
-            
-
-             // One Step Addition Equation
-            { question: " -3 + x = 10 <br> <br> x = ____", answer: "13", imageUrl: "" },
-
-
-            // Multiplying Decimals
-            { question: "How many places would you move the decimal in your answer for <br>  1.2 x 0.03?", answer: "3", imageUrl: "" },
-
-
-
-
-            { question: "- 7 - 8 = ", answer: "-15", imageUrl: "" },
-
-
-            //Dividing Fracxtions
-            { question: "When do you keep, change, flip? <br> Type in +, -, x, or /", answer: "/", imageUrl: "https://images.squarespace-cdn.com/content/v1/54905286e4b050812345644c/1616006538446-KFTGCO0RLTBHQHWIBF2D/Snip20210317_3.png" },
-
-
-
-             //GCF and LCM
-            { question: "What is the greatest common factor (GCF) of 280 and 144??", answer: "8", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMvNZfyWFzyWN4QAu6QDJ5fmtVIhYlHkLQbxDbO6SHNA--2UDvBhkITnG-_gx3wlcbmg&usqp=CAU" },
-
-            //GCF and LCM
-            { question: "What is the least common multiple of 8 and 12  ", answer: "24", imageUrl: "https://static.qumath.in/static/website/old-cdn-static/common-factor/lcm-of-8-and-12-by-listing-multiples-method.png" },
-
-            //Distributive Property and Factoring
-            { question: "Type in the missing number.  <br>     45 + 60 = ___(3 + 4)", answer: "15", imageUrl: "" },
-
-
-
-            //Exponents
-            { question: "Find the value of the expression", answer: "64", imageUrl: "https://study.com/cimages/multimages/16/base_and_exponent_1476386592073130735.jpg" },
-
-            
-            //Prime Factorization
-            { question: "What is the prime factorization of 30. <br>  Put numbers in order from least to greatest. <br>  No spaces and include x signs. Example: 2x2x3", answer: "2x3x5", imageUrl: "https://images.saymedia-content.com/.image/t_share/MTg0MjExNTc3ODk1OTIxNTM5/how-to-write-a-number-as-a-product-of-its-prime-factors.jpg" },
-
-        
-
-
-
-            { question: "What is 7 - (-8)", answer: "15", imageUrl: "" },
- 
-
-
-
-              //exponents
-              { question: "Any number raised to the power of 0 is _____ = ", answer: "1", imageUrl: "https://o.quizlet.com/i/j2mUbui1rGvVIHGfpRO3vg.jpg" },
-
-
-             
-          
-
-            //expressions
-              { question: "How many terms does this expression have?", answer: "4", imageUrl: "https://images.squarespace-cdn.com/content/v1/54905286e4b050812345644c/c4bdd683-83a0-4d74-9b75-7011f93bc758/Fig-01.jpg" },
-
-
-            { question: "Evaluate 4m + 2 when m = -4", answer: "-14", imageUrl: "" },
-
-           
-
-            { question: "What is the value of c? <br> c + 14 = -20", answer: "-34", imageUrl: "" },
-
-            { question: "A number, n, when added to 20 equals negative 10. <br> What is the value of n?", answer: "-30", imageUrl: "" },
-
-
-            { question: "What is the value?", answer: "1/64", imageUrl: "https://study.com/cimages/multimages/16/fraction_with_exponent7962331627880981711.jpg" },
-
-             { question: "- 8 - 5 = ", answer: "-13", imageUrl: "" },
-
-             
-              { question: "- 9 - 6 = ", answer: "-15", imageUrl: "" },
-
-
-             
-
-
-               { question: "In quadrant ___ (1, 2, 3, 4), the X value is negative and the Y value is positive", answer: "2", imageUrl: "https://i0.wp.com/maths.forkids.education/wp-content/uploads/2019/08/graph-quadrant.jpg?ssl=1" },
-
-               
-          
-                 { question: "In quadrant ___ (1, 2, 3, 4), the X value is negative and the Y value is positive", answer: "2", imageUrl: "https://i0.wp.com/maths.forkids.education/wp-content/uploads/2019/08/graph-quadrant.jpg?ssl=1" },
-              
-
-
-
-            //F, D, P Equivalents
-            { question: "Enter the fraction equivalent of 65%", answer: "13/20", imageUrl: "https://www.wikihow.com/images/thumb/6/63/Convert-a-Percentage-to-a-Fraction-Step-6.jpg/v4-460px-Convert-a-Percentage-to-a-Fraction-Step-6.jpg" },
-
-              //MA.6.AR.3.4 Percents 
-              { question: "Of the 24 employees working at Hannah’s restaurant, 6 are assistant chefs. What percentage of employees are assistant chefs? ___%", answer: "25", imageUrl: "" },
-
-
-            //MA.6.AR.3.5 TOO HARD FOR A SPEED DRILL
-
-
-
-            //MA.6.GR.1.1 COORDINATE PLANE REFLECTIONS
-              { question: "What point is located at (-1, -2)?  Point ____", answer: "d", imageUrl: "https://live.staticflickr.com/65535/53413824503_2f7038789e_z.jpg" },
-
-
-         
-
-                //quadrants
-           
-
-               
-                { question: "In quadrant ___ (1, 2, 3, 4), the X value is positive and the Y value is positive", answer: "1", imageUrl: "https://i0.wp.com/maths.forkids.education/wp-content/uploads/2019/08/graph-quadrant.jpg?ssl=1" },
-
-               
-             
-
-               
-                { question: "In quadrant ___ (1, 2, 3, 4), the X value is positive and the Y value is negative", answer: "4", imageUrl: "https://i0.wp.com/maths.forkids.education/wp-content/uploads/2019/08/graph-quadrant.jpg?ssl=1" },
-
-            
-
-
-            //MA.6.GR.2.2 AREA OF COMPLEX SHAPES
-              { question: "Find the area of the parallelogram ____ square units", answer: "72", imageUrl: "https://cdn-academy.pressidium.com/academy/wp-content/uploads/2021/09/parallelogram-1.png" },
-
-
-
-
-
-
-            //MA.6.GR.2.3 Volume of a Rectangular Prism
-              { question: "Find the volume of this rectangular prism. ____ cubic centimeters", answer: "100", imageUrl: "https://o.quizlet.com/Ti4WkJkeD0Y2ap2ICgmkbg.png" },
-
-
-
-          
-
-
-
-           
-            //Percent Proportion
-            { question: "A number is 25% of 80. What is the number?", answer: "20", },
-
-
-             { question: "What is 10% of 30?", answer: "3", imageUrl: "" },
-
-              { question: "What is 10% of 300?", answer: "30", imageUrl: "" },
-
-              { question: "What is 1% of 300?", answer: "3", imageUrl: "" },
-
-              { question: "To find 10% of a number, move the decimal (1, 2) _______ place(s) to the left", answer: "1", imageUrl: "" },
-
-              { question: "To find 1% of a number, move the decimal (1, 2) ________place(s) to the left", answer: "2", imageUrl: "" },
-
-
-              { question: "To find 50% of a number, divide the number by ____ (1, 2, 3, 4)", answer: "2", imageUrl: "" },
-
-              { question: "In an ordered pair (x, y) , the first value, x, tells you how far to go <br> a. to the left or right <br> b. up or down<br> Type in letter choice", answer: "a", imageUrl: "" },
-
-
-              { question: "In an ordered pair (x, y) , the second value, y, tells you how far to go to the <br> a. left or right <br> b. up or down<br> Type in letter choice", answer: "b", imageUrl: "" },
-
-               { question: "In quadrant ___ (1, 2, 3, 4), the X value is negative and the Y value is negative", answer: "3", imageUrl: "https://i0.wp.com/maths.forkids.education/wp-content/uploads/2019/08/graph-quadrant.jpg?ssl=1" },
-
-
-      
-
-            { question: "A rational number is any number that can be written as a _______", answer: "fraction", imageUrl: "https://slideplayer.com/5920475/19/images/slide_1.jpg" },
-
-
-            //6.DP.1.2 Mean, Median, Mode
-              { question: "What is the mean of 10, 20, 60", answer: "30", imageUrl: "https://cdn.virtualnerd.com/thumbnails/Alg1_14_01_0008-diagram_thumb-lg.png" },
-
-               //6.DP.1.2 Mean, Median, Mode
-              { question: "What is the mode?  1, 2, 3, 3, 3, 4, 5", answer: "3", imageUrl: "" },
-
-
-
-            
-            //exponents
-              { question: "Any number raised to the power of 0 is _____ = ", answer: "1", imageUrl: "https://miro.medium.com/v2/resize:fit:592/1*O-8RkyZmYUnjZeibuIcMOw.png" },
-
-
-
-
-             
-            
-
-            { question: "(25)(7) = ", answer: "175", imageUrl: "" },
-
-
-
-              { question: " - 6 + (- 4) = ", answer: "-10", imageUrl: "" },
-
-              { question: "- 4 + (- 3) = ", answer: "-7", imageUrl: "" },
-
-            { question: "(-6)(-25) = ", answer: "150", imageUrl: "" },
-
-
-
-
-
-
-            { question: "When you raise a power to a power _____ the powers. <br> Type +, -, x, or / ", answer: "x", imageUrl: "https://i.ytimg.com/vi/39l-MZFUEzY/sddefault.jpg" },
-
-           
-
-
-
-
-              { question: "What is the prime factorization of 40? <br><br> a. 2 x 4 x 5 <br>b. 2 x 2 x 2 x 5 <br>c. 2 x 4 x 5 <br>Type in letter choice", answer: "b", imageUrl: "" },
-
-            
-
-
-
-
-               // Ordering and Comparing Integers
-            { question: "Which integer has the greater value? -4 or -5", answer: "-4", imageUrl: "https://d20khd7ddkh5ls.cloudfront.net/positives_and_negatives.jpg" },
-
-
-            // Absolute Value
-            { question: "The absolute value of 4 is ____ ", answer: "4", imageUrl: "https://www.katesmathlessons.com/uploads/1/6/1/0/1610286/published/absolute-value-definition-what-is-absolute-value-what-are-absolute-values-calculator-help-lesson-math-examples.png?1649955410" },
-
-
-            // Absolute Value Operations
-            { question: "Find the value of |-3| + |-2| = ____", answer: "5", imageUrl: "" },
-
-            
-
-             // One Step Addition Equation
-            { question: " -4 + x = 10 <br> <br> x = ____", answer: "14", imageUrl: "" },
-
-
-
-             { question: "Find the distance between (11, -5) and (11, 0)", answer: "5", imageUrl:"" },
-
-
-
-          { question: "Find the area of  the triangle ____square meters ", answer: "44", imageUrl: "https://i0.wp.com/www.mathswithmum.com/wp-content/uploads/2017/11/Area-of-a-Triangle-7.gif?resize=600%2C450&ssl=1" },
-
-
-          { question: "Find the area of the parallelogram ______square units ", answer: "28", imageUrl: "https://vt-vtwa-assets.varsitytutors.com/vt-vtwa/uploads/problem_question_image/image/2665/problem_12.jpg" },
-
-
-          { question: "Find the volume of the rectangular prism _____ cubic inches", answer: "120", imageUrl: "https://www.pngitem.com/pimgs/m/236-2366905_a-rectangular-prism-that-represents-a-box-volume.png" },
-
-           { question: "A statistical question will have more than one possible answer. <br> <br> Type t for true or f for false", answer: "t", imageUrl: "" },
-
-
-
-
-
-            { question: "10, 18, 14, 18, 2. What is the range?", answer: "16", imageUrl: "https://cdn.hswstatic.com/gif/range-1.jpg" },
-
-
-             { question: "____% of Nobel Prize Winners are 60 or older.", answer: "50", imageUrl: "https://www.w3schools.com/statistics/img_boxplot.svg" },
-
-
-              { question: "Use the DOUBLE and HALVE mental math strategy. <br> 3.5 x 8 = 7 x ___", answer: "4", imageUrl: "" },
-
-
-               { question: "Same exponents, different bases ______ the bases and keep the exponent the same", answer: "multiply", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdW0xHgQwUHYG7uNMa9y0LeFsiLgPIdnT5u0pdS2N7U5p0VbjUIAnKuAm834dJW-PBtec&usqp=CAU" },
-
-
-                { question: "Multiply the same bases? ____ the exponents", answer: "add", imageUrl: "https://images.squarespace-cdn.com/content/v1/54905286e4b050812345644c/1584639531943-OILC77EF3XYCA83QDTKO/Snip20200319_16.png" },
-
-
-
-
-           { question: "Raise a power to a power? ______ the powers", answer: "multiply", imageUrl: "https://i.ytimg.com/vi/39l-MZFUEzY/maxresdefault.jpg" },
-
-
-
-           { question: " |4 - 7.5| =  ", answer: "3.5", imageUrl: "" },
-
-           { question: " What is the value of -|-42|  ", answer: "-42", imageUrl: "" },
-
-           { question: "Use >,<, or = to compare <br><br> |-12| ____ |-9|  ", answer: ">", imageUrl: "" },
-
-
-           { question: "Using MR DL, find the value of 2.6 x 100", answer: "260", imageUrl: "" },
-
-
-
-           { question: "Using MR DL, find the value of 3000 / 10 = ", answer: "300", imageUrl: "" },
-
-       
-            
-            
-            { question: "How many feet are in one mile?_____feet ", answer: "5280", imageUrl: "" },
-
-            
-            { question: "125 x 8 = ___ ", answer: "1000", imageUrl: "" },
-            
-            
-            { question: "Is 816 divisible by 3?", answer: "yes", imageUrl: "https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/divisibility-rule-of-3-1623326301.png" },
-
-             
-          
-
-             
-        
-           
-           { question: " 2 - 3 =  ", answer: "-1", imageUrl: "https://i0.wp.com/math4teaching.com/wp-content/uploads/2010/01/subtracting-positive1.png?ssl=1" },
-
-
-
-
-
-
-        { question: "-6 + 3 = ", answer: "-3", imageUrl: "https://www.math-only-math.com/images/addition-of-integers.png" },
-
-        { question: "What is the square root of 16?  + -____", answer: "4", imageUrl: "https://blog.lib.uiowa.edu/eng/files/2016/03/square_root_square.jpg" },
-        
-        
-
-          { question: "What is the square root? + - ______", answer: "5", imageUrl: "https://qph.cf2.quoracdn.net/main-qimg-2e8abc244702fc332797b945078aa08a.webp" },
-
-          
-
-
-
-            //new questions january 24
-            
-
-        
-        { question: " How many places should you move the decimal in both numbers? ___ time  ", answer: "1", imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrM8DJBVIhOLaYaQuW7CCFsa-tI2UOow9-0A&usqp=CAU" },
-
-
-        { question: "  ", answer: "b", imageUrl: "https://i.postimg.cc/j2kD1Fcd/Screen-Shot-2024-01-23-at-4-29-07-AM.jpg" },
-
-        { question: "Which graph shows that x > 70 ", answer: "c", imageUrl: "https://i.postimg.cc/kXgSJxtd/Screen-Shot-2024-01-23-at-4-32-14-AM.jpg" },
-
-        { question: "Evaluate 10(x+1) when x = 2", answer: "30", imageUrl: "" },
-
-          { question: "Which graph shows that x >= 70 ", answer: "d", imageUrl: "https://i.postimg.cc/kXgSJxtd/Screen-Shot-2024-01-23-at-4-32-14-AM.jpg" },
-
-
-
-        { question: "  ", answer: "d", imageUrl: "https://i.postimg.cc/bJBvqFDG/Screen-Shot-2024-01-23-at-4-37-11-AM.jpg" },
-
-
-
-          { question: "Which graph shows that x <= 70 ", answer: "b", imageUrl: "https://i.postimg.cc/kXgSJxtd/Screen-Shot-2024-01-23-at-4-32-14-AM.jpg" },
-
-
-        { question: "7s = 42, what is the value of s?", answer: "6", imageUrl: "" },
-
-
-
-        { question: "Which graph shows that x < 70 ", answer: "a", imageUrl: "https://i.postimg.cc/kXgSJxtd/Screen-Shot-2024-01-23-at-4-32-14-AM.jpg" },
-
-
-
-
-
-
-
-        { question: "  ", answer: "a", imageUrl: "https://i.postimg.cc/QxMyxHjh/Screen-Shot-2024-01-22-at-5-36-15-AM.jpg" },
-        { question: "  ", answer: "16/625", imageUrl: "https://i.postimg.cc/gkfQSGPp/Screen-Shot-2024-01-22-at-5-37-56-AM.jpg" },
-        { question: "  ", answer: "b", imageUrl: "https://i.postimg.cc/PqB0chDY/Screen-Shot-2024-01-22-at-5-39-09-AM.jpg" },
-        { question: "How do you turn a fraction to a decimal? ", answer: "divide", imageUrl: "https://calcworkshop.com/wp-content/uploads/9-16-as-a-decimal.png" },
-        { question: "What percent is represented by 0.85? ____%", answer: "85", imageUrl: "" },
-
-
-
-        { question: "  ", answer: "b", imageUrl: "https://i.postimg.cc/zGNfztKN/Screen-Shot-2024-01-21-at-5-46-39-AM.jpg" },
-        { question: "", answer: "d", imageUrl: "https://i.postimg.cc/NMk4nP60/Screen-Shot-2024-01-21-at-5-48-04-AM.jpg" },
-        { question: "What is the least common multiple of 4 and 12", answer: "12", imageUrl: "" },
-        { question: "What is the GCF of 12 and 20", answer: "4", imageUrl: "https://study.com/cimages/videopreview/videopreview-full/vqwytnne6x.jpg" },
-        { question: "GCF you make a little _______, divide till you can't anymore", answer: "ladder", imageUrl: "" },
-
-
-            // Add more questions as needed
-        ];
+/* Add your full list of questions here */ ];
 
         let currentLevel = 1;
         let currentQuestionIndex = 0;
+        let shuffledQuestions = [];
         let timer;
         let answerTimeout;
         const totalTime = 60000; // 60 seconds for the entire drill
         const answerDelay = 7000; // 7 seconds before showing correct answer
 
-
+        function shuffle(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
 
         async function startDrill() {
             const name = document.getElementById("nameInput").value.trim();
@@ -684,6 +137,7 @@ Nov 29 version
                     document.getElementById("output").textContent = data.error;
                 } else {
                     currentLevel = parseInt(data.level);
+                    shuffledQuestions = shuffleQuestionsForLevel(currentLevel);
                     document.getElementById("output").textContent = "";
                     document.getElementById("userInput").style.display = "none";
                     document.getElementById("quiz").style.display = "block";
@@ -698,6 +152,12 @@ Nov 29 version
             }
         }
 
+        function shuffleQuestionsForLevel(level) {
+            const start = level - 1;
+            const end = start + 10; // Adjust the range for the level
+            return shuffle(questions.slice(start, end));
+        }
+
         function startTimer() {
             timer = setTimeout(() => {
                 alert("Time is up! Submitting your progress.");
@@ -707,15 +167,14 @@ Nov 29 version
         }
 
         function loadQuestion() {
-            const levelQuestions = questions.slice(currentLevel - 1, currentLevel + 10);
-            const question = levelQuestions[currentQuestionIndex];
-            document.getElementById('question').innerHTML = ` ${question.question}`;
-if (question.imageUrl) {
-    document.getElementById('questionImage').src = question.imageUrl;
-    document.getElementById('questionImage').style.display = "block";
-} else {
-    document.getElementById('questionImage').style.display = "none";
-}
+            const question = shuffledQuestions[currentQuestionIndex];
+            document.getElementById('question').innerHTML = question.question;
+            if (question.imageUrl) {
+                document.getElementById('questionImage').src = question.imageUrl;
+                document.getElementById('questionImage').style.display = "block";
+            } else {
+                document.getElementById('questionImage').style.display = "none";
+            }
             setAnswerTimeout(question.answer); // Set timeout to show the correct answer
             focusInput(); // Automatically focus input box
         }
@@ -731,7 +190,7 @@ if (question.imageUrl) {
         function checkAnswer() {
             const inputBox = document.getElementById('inputBox');
             const userAnswer = inputBox.value.trim().toLowerCase();
-            const correctAnswer = questions[currentLevel - 1 + currentQuestionIndex].answer.toLowerCase();
+            const correctAnswer = shuffledQuestions[currentQuestionIndex].answer.toLowerCase();
 
             if (userAnswer === correctAnswer) {
                 document.getElementById('feedback').textContent = "Correct!";
@@ -745,9 +204,10 @@ if (question.imageUrl) {
 
         function moveToNextQuestion() {
             currentQuestionIndex++;
-            if (currentQuestionIndex >= 10) {
+            if (currentQuestionIndex >= shuffledQuestions.length) {
                 currentQuestionIndex = 0;
                 currentLevel++;
+                shuffledQuestions = shuffleQuestionsForLevel(currentLevel);
                 document.getElementById("level").textContent = `Level: ${currentLevel}`;
             }
             loadQuestion();
