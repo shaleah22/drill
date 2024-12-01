@@ -36,6 +36,15 @@
     </div>
 
     <script>
+
+
+
+        //no right click code
+         window.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        }, false);
+        
+       
         const questions = [ 
             { question: "-3 - (-9) = ", answer: "6", imageUrl: "https://i.postimg.cc/brP2T39q/3-9.gif" },
             { question: "-9 - 3 = ", answer: "-12", imageUrl: "https://i.postimg.cc/P5H5s0wj/9-3.gif" },
