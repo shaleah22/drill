@@ -22,7 +22,7 @@
 <body>
     <div class="container">
         <div id="userInput">
-            <h3>Type in your username and press enter to start</h3>
+            <h3>Type in your username and press enter to start. No spaces. No capital letters. </h3>
             <input type="text" id="nameInput" placeholder="Enter Name" autofocus>
             <p id="output"></p>
         </div>
@@ -895,7 +895,7 @@
         }
         function shuffleQuestionsForLevel(level) {
             const start = level - 1;
-            const end = start + 10; // Adjust the range for the level
+            const end = start + 3; // Adjust the range for the level
             return shuffle(questions.slice(start, end));
         }
         function startTimer() {
