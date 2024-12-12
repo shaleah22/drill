@@ -7,7 +7,7 @@
     <style>
         body { font-family: Arial, sans-serif; }
         #level { position: absolute; top: 10px; right: 10px; font-size: 30px; font-weight: bold; }
-        #question { margin-bottom: 50px; font-size: 80px; }
+        #question { margin-bottom: 50px; font-size: 40px; }
         #questionContainer { margin-top: 90px; }
         #questionImage { 
             max-width: 400px; 
@@ -40,6 +40,10 @@
             e.preventDefault();
         }, false);
         const questions = [ 
+
+
+
+
             { question: "-3 - (-9) = ", answer: "6", imageUrl: "https://i.postimg.cc/brP2T39q/3-9.gif" },
             { question: "-9 - 3 = ", answer: "-12", imageUrl: "https://i.postimg.cc/P5H5s0wj/9-3.gif" },
             { question: "3 - 9 = ", answer: "-6", imageUrl: "https://i.postimg.cc/XY11B6SL/3-9.gif" },
@@ -53,9 +57,40 @@
             { question: "-6 x 7 = ", answer: "-42", imageUrl: "https://i.postimg.cc/YCpgbLDt/Screenshot-2024-11-28-at-6-51-38-AM.png" },
             { question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
             { question: "(-4)(7) =  ", answer: "-28", imageUrl: "https://i.postimg.cc/9Q3THqn3/Screenshot-2024-11-28-at-6-50-44-AM.png" },
+            
+
+//level 13
+//fast questions from 2024 test 71%
+{ question: "The data is <br> a. symmetric <br> b. skewed", answer: "a", imageUrl: "https://i.postimg.cc/R0x0htBf/Screenshot-2024-12-11-at-6-18-43-AM.png" },
+//73% 
+{ question: "What is the ratio of 6th grade players to the TOTAL number of players? Write as a fraction", answer: "7/17", imageUrl: "https://i.postimg.cc/xTG9TjPF/Screenshot-2024-12-12-at-5-12-33-AM.png" },
+{ question: "What is the ratio of  7th grade players to 6th grade players? Write as a fraction", answer: "10/7", imageUrl: "https://i.postimg.cc/xTG9TjPF/Screenshot-2024-12-12-at-5-12-33-AM.png" },
+{ question: "What is the ratio of  6th grade players to 7th grade players? Write as a fraction", answer: "7/10", imageUrl: "https://i.postimg.cc/xTG9TjPF/Screenshot-2024-12-12-at-5-12-33-AM.png" },
+//ma.6.gr.2.3 volume of a rectangular prism 77%
+{ question: "To solve quickly on a calculator, you <br> <br> a. multiply 2 x 3.5 x 3.5 <br> b. add 2 + 3.12 + 3.12 <br> c. multiply 2 x 3.12 x 3.12", answer: "a", imageUrl: "https://i.postimg.cc/TYr01FFP/Screenshot-2024-12-12-at-4-22-11-AM.png" },
+{ question: "What formula can you use to find the surface area of a square pyramid? <br> a. v = lwh <br>b. sa = 2(lh + lw + hw) <br>c. sa = 2bs + b^2", answer: "c", imageUrl: "https://i.postimg.cc/SNNLQR6g/Screenshot-2024-12-12-at-4-34-29-AM.png" },
+// distance on a coordinate plane 84%
+{ question: "<br>Look at the numbers that are different. What is the distance between (-6, 3) and (7, 3)", answer: "13", imageUrl: "" },
+//ma.6.ar.2.1 86% what makes an inequality true
+{ question: "<br> What value would make j + 2 < 17 true? <br><br> -15 <br><br> 15 <br><br> 20", answer: "-15", imageUrl: "" },
+{ question: "Point K is found at <br> a. (-1, 0) <br> b. (-0.6, 1) <br> c. (-0.6, -1) <br> d. (-1, -0.6)", answer: "d", imageUrl: "https://i.postimg.cc/7Y7hkXvD/Screenshot-2024-12-11-at-6-24-28-AM.png" },
+{ question: "Point L is found at <br> a. (-1, 0) <br> b. (-0.6, 1) <br> c. (-0.6, -1) <br> d. (-1, -0.6)", answer: "b", imageUrl: "https://i.postimg.cc/7Y7hkXvD/Screenshot-2024-12-11-at-6-24-28-AM.png" },
+{ question: "What is the value of 1^3? ", answer: "1", imageUrl: "https://i.postimg.cc/SNqFnG2m/Screenshot-2024-12-11-at-6-28-23-AM.png" },
+{ question: "What is the area of the triangle", answer: "28", imageUrl: "https://i.postimg.cc/QdyyJgt9/Screenshot-2024-12-11-at-6-30-21-AM.png" },
+{ question: "Which decimal is equivalent to 3 4/5 <br> 0.345 <br> 0.38 <br> 3.45 <br> 3.8", answer: "3.8", imageUrl: "https://i.postimg.cc/nrF2JMrf/Screenshot-2024-12-11-at-6-31-24-AM.png" },
+//how would you type this on a calculator
+{ question: "How would you type this into a calculator? <br> a. 41 / 20 = <br> b. 20 / 41 = ", answer: "a", imageUrl: "https://i.postimg.cc/W1vGLhHW/Screenshot-2024-12-11-at-6-34-28-AM.png" },
+{ question: "Which value for x makes the inequality <br> -3x > 18 true<br> <br>-8 <br> -6 <br> 6 <br> 8 <br>", answer: "-8", imageUrl: "https://i.postimg.cc/J4ZpwwPq/Screenshot-2024-12-11-at-7-08-46-AM.png" },
+
+
+
+
+
+
             { question: "(-4) + 7 =  ", answer: "3", imageUrl: "https://i.postimg.cc/Wpnv8Gc9/negative-4-plus-7.gif" },
             { question: "(-7) + (-4) =  ", answer: "-11", imageUrl: "https://i.postimg.cc/Jzp4gkyL/7-4.gif" },
             { question: "5 x 7 =  ", answer: "35", imageUrl: "https://i.postimg.cc/TYgWR3bZ/Screenshot-2024-11-28-at-6-43-35-AM.png" },
+
             { question: "-5 + 7 =  ", answer: "2", imageUrl: "https://i.postimg.cc/Njq5Wjh0/pictures.gif" },
             { question: "7 x 7  = ", answer: "49", imageUrl: "https://i.postimg.cc/G2Kyn7s9/Screenshot-2024-11-28-at-6-43-00-AM.png" },
             { question: "-9(-7) = ", answer: "63", imageUrl: "https://i.postimg.cc/JnsLRtsJ/9-times-7.gif" },
@@ -136,105 +171,24 @@
 { question: "-13 + 5", answer: "-8", imageUrl: "" },
 { question: "-13 - 5", answer: "-18", imageUrl: "" },
 
+//fast questions from 2024 test
+{ question: "The data is <br> a. symmetric <br> b. skewed", answer: "a", imageUrl: "https://i.postimg.cc/R0x0htBf/Screenshot-2024-12-11-at-6-18-43-AM.png" },
+{ question: "Point K is found at <br> a. (-1, 0) <br> b. (-0.6, 1) <br> c. (-0.6, -1) <br> d. (-1, -0.6)", answer: "d", imageUrl: "https://i.postimg.cc/7Y7hkXvD/Screenshot-2024-12-11-at-6-24-28-AM.png" },
+{ question: "Point L is found at <br> a. (-1, 0) <br> b. (-0.6, 1) <br> c. (-0.6, -1) <br> d. (-1, -0.6)", answer: "b", imageUrl: "https://i.postimg.cc/7Y7hkXvD/Screenshot-2024-12-11-at-6-24-28-AM.png" },
+
+
+{ question: "What is the value of 1^3? ", answer: "1", imageUrl: "https://i.postimg.cc/SNqFnG2m/Screenshot-2024-12-11-at-6-28-23-AM.png" },
+{ question: "What is the area of the triangle", answer: "28", imageUrl: "https://i.postimg.cc/QdyyJgt9/Screenshot-2024-12-11-at-6-30-21-AM.png" },
+{ question: "Which decimal is equivalent to 3 4/5 <br> a. 0.345 <br> b. 0.38 <br> c. 3.45 <br> d. 3.8", answer: "d", imageUrl: "https://i.postimg.cc/nrF2JMrf/Screenshot-2024-12-11-at-6-31-24-AM.png" },
+
+{ question: "How could you type this in the calculator to get the answer? <br> a. 41 / 20 = <br> b. 20 / 41 = ", answer: "a", imageUrl: "https://i.postimg.cc/W1vGLhHW/Screenshot-2024-12-11-at-6-34-28-AM.png" },
+{ question: "Which value for x makes the inequality -3x > 18 true? <br>-8 <br> -6 <br> 6 <br> 8 <br>", answer: "-8", imageUrl: "https://i.postimg.cc/J4ZpwwPq/Screenshot-2024-12-11-at-7-08-46-AM.png" },
+{ question: "-13 + 5", answer: "-8", imageUrl: "" },
+{ question: "-13 - 5", answer: "-18", imageUrl: "" },
+
 
 
 */
-
-
-//repeat of 43 to 128
-{ question: "-3 - (-9) = ", answer: "6", imageUrl: "https://i.postimg.cc/brP2T39q/3-9.gif" },
-            { question: "-9 - 3 = ", answer: "-12", imageUrl: "https://i.postimg.cc/P5H5s0wj/9-3.gif" },
-            { question: "3 - 9 = ", answer: "-6", imageUrl: "https://i.postimg.cc/XY11B6SL/3-9.gif" },
-            { question: "6(8) = ", answer: "48", imageUrl: "https://i.postimg.cc/ncHFD9x7/Screenshot-2024-12-04-at-6-10-16-AM.png" },
-            { question: "7 x 8 =  ", answer: "56", imageUrl: "https://i.postimg.cc/Z5y8Bs0K/56-7-x-8.gif" },
-            { question: "(-3)(-9) = ", answer: "27", imageUrl: "https://i.postimg.cc/D0jFhsgq/9-times-3.gif" },
-            { question: " (-8)(-7) = ", answer: "56", imageUrl: "https://i.postimg.cc/kGbX10T8/8-x-7.gif" },
-            { question: " -8 - 7 = ", answer: "-15", imageUrl: "https://i.postimg.cc/j5G9f0H3/8-7.gif" },
-            { question: "-3 - (-9) = ", answer: "6", imageUrl: "https://i.postimg.cc/brP2T39q/3-9.gif" },
-             { question: " 7 - 8 = ", answer: "-1", imageUrl: "https://i.postimg.cc/RZsJHfQr/7-8.gif" },
-            { question: "-6 x 7 = ", answer: "-42", imageUrl: "https://i.postimg.cc/YCpgbLDt/Screenshot-2024-11-28-at-6-51-38-AM.png" },
-            { question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
-            { question: "(-4)(7) =  ", answer: "-28", imageUrl: "https://i.postimg.cc/9Q3THqn3/Screenshot-2024-11-28-at-6-50-44-AM.png" },
-            { question: "(-4) + 7 =  ", answer: "3", imageUrl: "https://i.postimg.cc/Wpnv8Gc9/negative-4-plus-7.gif" },
-            { question: "(-7) + (-4) =  ", answer: "-11", imageUrl: "https://i.postimg.cc/Jzp4gkyL/7-4.gif" },
-            { question: "5 x 7 =  ", answer: "35", imageUrl: "https://i.postimg.cc/TYgWR3bZ/Screenshot-2024-11-28-at-6-43-35-AM.png" },
-            { question: "-5 + 7 =  ", answer: "2", imageUrl: "https://i.postimg.cc/Njq5Wjh0/pictures.gif" },
-            { question: "7 x 7  = ", answer: "49", imageUrl: "https://i.postimg.cc/G2Kyn7s9/Screenshot-2024-11-28-at-6-43-00-AM.png" },
-            { question: "-9(-7) = ", answer: "63", imageUrl: "https://i.postimg.cc/JnsLRtsJ/9-times-7.gif" },
-            { question: "- 9 - 7  = ", answer: "-16", imageUrl: "https://i.postimg.cc/cJV8jDhp/9-7.gif" },
-            { question: "- 7 - (-9)  = ", answer: "2", imageUrl: "https://i.postimg.cc/FzMZwkXZ/1.gif" },
-            { question: "4 x 8  = ", answer: "32", imageUrl: "https://i.postimg.cc/Fzrdz9g4/Screenshot-2024-11-29-at-4-59-46-AM.png" },
-            { question: "(4)(-9) = ", answer: "-36", imageUrl: "https://i.postimg.cc/nzFg7kbD/Screenshot-2024-11-29-at-6-39-48-AM.png" },
-            { question: "-4 + 9 = ", answer: "5", imageUrl: "https://i.postimg.cc/Wpm527VM/4-9.gif" },
-            { question: "6 * 9 = ", answer: "54", imageUrl: "https://i.postimg.cc/Pq8TWBr8/Screenshot-2024-11-29-at-5-02-01-AM.png" },
-            { question: "-6 + 9 = ", answer: "3", imageUrl: "https://i.postimg.cc/cHGNFVqp/6-9.gif" },
-            { question: "- 9 - 6 = ", answer: "-15", imageUrl: "https://i.postimg.cc/JhB9Mn3s/9-6.gif" },
-            { question: "(-8)(9)  = ", answer: "-72", imageUrl: "https://i.postimg.cc/15CK6ddS/Screenshot-2024-11-29-at-5-05-04-AM.png" },
-            { question: "(-6)(-8) = ", answer: "48", imageUrl: "https://i.postimg.cc/KYPKxkSz/6-x-8.gif" },
-            { question: "-8 + (-3) = ", answer: "-11", imageUrl: "https://i.postimg.cc/76fjtvgD/8-3.gif" },
-            { question: "-2 - (-9) =", answer: "7", imageUrl: "https://i.postimg.cc/4NGpBf1v/2-9.gif" },
-            { question: "7 - (-4) = ", answer: "11", imageUrl: "https://i.postimg.cc/ZKb4RJ0w/7-4.gif" },
-            { question: "-4 - 5  = ", answer: "-9", imageUrl: "https://i.postimg.cc/3rf2LcXx/4-5.gif" },
-            { question: "- 7 - 6  = ", answer: "-13", imageUrl: "https://i.postimg.cc/76XPyrRR/7-6.gif" },
-            { question: "(- 7)(- 6)  = ", answer: "42", imageUrl: "https://i.postimg.cc/7hPVfqby/7-x-6.gif" },
-            { question: "- 8 - 7 = ", answer: "-15", imageUrl: "https://i.postimg.cc/j5G9f0H3/8-7.gif" },
-            { question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
-            { question: "- 8 - 5  =", answer: "-13", imageUrl: "https://i.postimg.cc/vmhBzy3B/8-5.gif" },
-            { question: "7 - (-5) = ", answer: "12", imageUrl: "https://i.postimg.cc/cLHXZRb4/7-5.gif" },
-            { question: "-8 + (-3) = ", answer: "-11", imageUrl: "https://i.postimg.cc/76fjtvgD/8-3.gif" },
-             { question: "- 7 - 6  = ", answer: "-13", imageUrl: "https://i.postimg.cc/76XPyrRR/7-6.gif" },
-             { question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
-            { question: "- 7 - 7 = ", answer: "-14", imageUrl: "https://i.postimg.cc/mZwjKpgF/7-7.gif" },
-            { question: "8 x 6 = ", answer: "48", imageUrl: "https://i.postimg.cc/ncHFD9x7/Screenshot-2024-12-04-at-6-10-16-AM.png" },
-             { question: "- 7 - 4  = ", answer: "-11", imageUrl: "https://i.postimg.cc/Jzp4gkyL/7-4.gif" },
-            { question: "- 8 - 4 = ", answer: "-12", imageUrl: "https://i.postimg.cc/Ghh5h87t/8-4.gif" },
-            { question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
-            { question: "- 8 - 6  =", answer: "-14", imageUrl: "https://i.postimg.cc/vZmTzzPy/8-6.gif" },
-            { question: "9 - (-8) = ", answer: "17", imageUrl: "https://i.postimg.cc/zX864PZs/9-8.gif" },
-             { question: "- 5 - 6  = ", answer: "-11", imageUrl: "https://i.postimg.cc/C5gh3HSc/5-6.gif" },
-             { question: "8(6) = ", answer: "48", imageUrl: "https://i.postimg.cc/ncHFD9x7/Screenshot-2024-12-04-at-6-10-16-AM.png" },
-            { question: "- 5 - 7 = ", answer: "-12", imageUrl: "https://i.postimg.cc/mDrNQM06/5-7.gif" },
-            { question: "5 - (-9) = ", answer: "14", imageUrl: "https://i.postimg.cc/tgFgsrqN/5-9.gif" },
-            { question: "5 - 7 = ", answer: "-2", imageUrl: "https://i.postimg.cc/h497ZWwg/5-7.gif" },
-           { question: " 'at least' is a key phrase for what inequality sign?" , answer: ">=", imageUrl: "" },
-            { question: 'Type in the "less than" sign" ', answer: "<", imageUrl: "" },
-{ question: "6(8) = ", answer: "48", imageUrl: "https://i.postimg.cc/ncHFD9x7/Screenshot-2024-12-04-at-6-10-16-AM.png" },
-{ question: "-6 + 8 = ", answer: "2", imageUrl: "https://i.postimg.cc/sgcD98K4/6-8.gif" },
-{ question: "6 - 8 = ", answer: "-2", imageUrl: "https://i.postimg.cc/KYcqR90W/6-8.gif" },
-{ question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
-{ question: "8 - (-6) = ", answer: "14", imageUrl: "https://i.postimg.cc/8cqkCfDy/8-6.gif" },
-{ question: "-6 - (-8) = ", answer: "2", imageUrl: "https://i.postimg.cc/zDjnfnLL/6-8.gif" },
-{ question: "11 x 12 = ", answer: "132", imageUrl: "https://i.postimg.cc/mkdqWjtv/11-x-12.gif" },
-{ question: "12 x 8 = ", answer: "96", imageUrl: "https://i.postimg.cc/vTSr9rGy/12-x-8.gif" },
-{ question: "12 x 7 = ", answer: "84", imageUrl: "https://i.postimg.cc/x8MSWRqj/12-x-7.gif" },
-{ question: "-12 + 7 = ", answer: "-5", imageUrl: "https://i.postimg.cc/RFqmkf7F/12-7.gif" },
-{ question: "12 x 6 = ", answer: "72", imageUrl: "https://i.postimg.cc/nrHnKRvD/12-x-6.gif" },
-{ question: "12 x 9 = ", answer: "108", imageUrl: "https://i.postimg.cc/bwfVHL7H/12-x-9.gif" },
-{ question: "12 x 5 = ", answer: "60", imageUrl: "https://i.postimg.cc/K8zVYQMZ/12-x-5.gif" },
-{ question: "-12 + 8 = ", answer: "-4", imageUrl: "https://i.postimg.cc/3NSqQxwm/12-8.gif" },
-{ question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
-
-{ question: "-12 - 8 = ", answer: "-20", imageUrl: "https://i.postimg.cc/SRXcxttP/12-8.gif" },
-{ question: "-8 + 12 = ", answer: "4", imageUrl: "https://i.postimg.cc/QMDVV9j5/8-12.gif" },
-{ question: "6 x 7 = ", answer: "42", imageUrl: "https://i.postimg.cc/MTBWSPbb/Screenshot-2024-12-03-at-4-42-01-AM.png" },
-{ question: "6(8) = ", answer: "48", imageUrl: "https://i.postimg.cc/ncHFD9x7/Screenshot-2024-12-04-at-6-10-16-AM.png" },
-{ question: "6 * 9 = ", answer: "54", imageUrl: "https://i.postimg.cc/Pq8TWBr8/Screenshot-2024-11-29-at-5-02-01-AM.png" },
-{ question: "12 x 6 = ", answer: "72", imageUrl: "https://i.postimg.cc/nrHnKRvD/12-x-6.gif" },
-{ question: "7 x 7  = ", answer: "49", imageUrl: "https://i.postimg.cc/G2Kyn7s9/Screenshot-2024-11-28-at-6-43-00-AM.png" },
-{ question: "7 x 8 =  ", answer: "56", imageUrl: "https://i.postimg.cc/Z5y8Bs0K/56-7-x-8.gif" },
-{ question: "-9(-7) = ", answer: "63", imageUrl: "https://i.postimg.cc/JnsLRtsJ/9-times-7.gif" },
-{ question: "12 x 7 = ", answer: "84", imageUrl: "https://i.postimg.cc/x8MSWRqj/12-x-7.gif" },
-{ question: "8 x 8 = ", answer: "64", imageUrl: "https://i.postimg.cc/gcDXRbwB/Screenshot-2024-12-04-at-5-10-05-AM.png" },
-{ question: "8 x 9 = ", answer: "72", imageUrl: "https://i.postimg.cc/yY3LYMzJ/nines.gif" },
-{ question: "8 x 12 = ", answer: "96", imageUrl: "https://i.postimg.cc/vTSr9rGy/12-x-8.gif" },
-{ question: "12 x 9 = ", answer: "108", imageUrl: "https://i.postimg.cc/bwfVHL7H/12-x-9.gif" },
-
-
-
-
-
-
-
 
 //old questions 2023
             { question: "-3 - (-9) = ", answer: "6", imageUrl: "" },
@@ -312,7 +266,33 @@
             { question: "- 5 - 8  =", answer: "-13", imageUrl: "" },
             { question: "5 - (-9) = ", answer: "14", imageUrl: "" },
 
-            //level 206
+
+            
+//fast questions from 2024 test 71%
+{ question: "The data is <br> a. symmetric <br> b. skewed", answer: "a", imageUrl: "https://i.postimg.cc/R0x0htBf/Screenshot-2024-12-11-at-6-18-43-AM.png" },
+//73% 
+{ question: "What is the ratio of 6th grade players to the TOTAL number of players? Write as a fraction", answer: "7/17", imageUrl: "https://i.postimg.cc/xTG9TjPF/Screenshot-2024-12-12-at-5-12-33-AM.png" },
+{ question: "What is the ratio of  7th grade players to 6th grade players? Write as a fraction", answer: "10/7", imageUrl: "https://i.postimg.cc/xTG9TjPF/Screenshot-2024-12-12-at-5-12-33-AM.png" },
+{ question: "What is the ratio of  6th grade players to 7th grade players? Write as a fraction", answer: "7/10", imageUrl: "https://i.postimg.cc/xTG9TjPF/Screenshot-2024-12-12-at-5-12-33-AM.png" },
+//ma.6.gr.2.3 volume of a rectangular prism 77%
+{ question: "To solve quickly on a calculator, you <br> <br> a. multiply 2 x 3.5 x 3.5 <br> b. add 2 + 3.12 + 3.12 <br> c. multiply 2 x 3.12 x 3.12", answer: "a", imageUrl: "https://i.postimg.cc/TYr01FFP/Screenshot-2024-12-12-at-4-22-11-AM.png" },
+{ question: "What formula can you use to find the surface area of a square pyramid? <br> a. v = lwh <br>b. sa = 2(lh + lw + hw) <br>c. sa = 2bs + b^2", answer: "c", imageUrl: "https://i.postimg.cc/SNNLQR6g/Screenshot-2024-12-12-at-4-34-29-AM.png" },
+// distance on a coordinate plane 84%
+{ question: "<br>Look at the numbers that are different. What is the distance between (-6, 3) and (7, 3)", answer: "13", imageUrl: "" },
+//ma.6.ar.2.1 86% what makes an inequality true
+{ question: "<br> What value would make j + 2 < 17 true? <br><br> -15 <br><br> 15 <br><br> 20", answer: "-15", imageUrl: "" },
+{ question: "Point K is found at <br> a. (-1, 0) <br> b. (-0.6, 1) <br> c. (-0.6, -1) <br> d. (-1, -0.6)", answer: "d", imageUrl: "https://i.postimg.cc/7Y7hkXvD/Screenshot-2024-12-11-at-6-24-28-AM.png" },
+{ question: "Point L is found at <br> a. (-1, 0) <br> b. (-0.6, 1) <br> c. (-0.6, -1) <br> d. (-1, -0.6)", answer: "b", imageUrl: "https://i.postimg.cc/7Y7hkXvD/Screenshot-2024-12-11-at-6-24-28-AM.png" },
+{ question: "What is the value of 1^3? ", answer: "1", imageUrl: "https://i.postimg.cc/SNqFnG2m/Screenshot-2024-12-11-at-6-28-23-AM.png" },
+{ question: "What is the area of the triangle", answer: "28", imageUrl: "https://i.postimg.cc/QdyyJgt9/Screenshot-2024-12-11-at-6-30-21-AM.png" },
+{ question: "Which decimal is equivalent to 3 4/5 <br> 0.345 <br> 0.38 <br> 3.45 <br> 3.8", answer: "3.8", imageUrl: "https://i.postimg.cc/nrF2JMrf/Screenshot-2024-12-11-at-6-31-24-AM.png" },
+//how would you type this on a calculator
+{ question: "How would you type this into a calculator? <br> a. 41 / 20 = <br> b. 20 / 41 = ", answer: "a", imageUrl: "https://i.postimg.cc/W1vGLhHW/Screenshot-2024-12-11-at-6-34-28-AM.png" },
+{ question: "Which value for x makes the inequality <br> -3x > 18 true<br> <br>-8 <br> -6 <br> 6 <br> 8 <br>", answer: "-8", imageUrl: "https://i.postimg.cc/J4ZpwwPq/Screenshot-2024-12-11-at-7-08-46-AM.png" },
+
+
+
+            
             //old questions 2023
           //area of a triangle
            { question: "Find the area ____ square feet", answer: "6", imageUrl: "https://cdn-academy.pressidium.com/academy/wp-content/uploads/2020/12/FAQ-Area-and-Perimeter-of-a-Triangle-3.png" },
