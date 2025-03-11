@@ -2035,8 +2035,6 @@
 
 
 
-
-
 //best measure to use mean, median, mode
     {"question":"A store sold shoe sizes: 8, 9, 9, 10, 10, 10, 10, 11. <br>What measure of center shows the most common/most popular size?","answer":"Mode","imageUrl":"","options":["Mean","Median","Mode"]},
     {"question":"Marathon times (minutes): 145, 150, 152, 155, 300. <br>What measure best represents a typical time?","answer":"Median","imageUrl":"","options":["Mean","Median","Mode"]},
@@ -2101,7 +2099,11 @@
   {"question": "What is 3³?", "answer": "27", "imageUrl": ""},
   {"question": "What is 4³?", "answer": "64", "imageUrl": ""},
   {"question": "What is 5³?", "answer": "125", "imageUrl": ""},
-   {"question": "What is 10³?", "answer": "1000", "imageUrl": ""},
+  {"question": "What is 6³?", "answer": "216", "imageUrl": ""},
+  {"question": "What is 7³?", "answer": "343", "imageUrl": ""},
+  {"question": "What is 8³?", "answer": "512", "imageUrl": ""},
+  {"question": "What is 9³?", "answer": "729", "imageUrl": ""},
+  {"question": "What is 10³?", "answer": "1000", "imageUrl": ""},
   {"question": "What is 1²?", "answer": "1", "imageUrl": ""},
   {"question": "What is 1³?", "answer": "1", "imageUrl": ""},
   {"question": "What is 2³?", "answer": "8", "imageUrl": ""},
@@ -2309,6 +2311,18 @@
 { question: "Which graph shows that x <= 70 ", answer: "b", imageUrl: "https://i.postimg.cc/kXgSJxtd/Screen-Shot-2024-01-23-at-4-32-14-AM.jpg" },
 { question: "7s = 42, what is the value of s?", answer: "6", imageUrl: "" },
 { question: "Which graph shows that x < 70 ", answer: "a", imageUrl: "https://i.postimg.cc/kXgSJxtd/Screen-Shot-2024-01-23-at-4-32-14-AM.jpg" },
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2603,7 +2617,7 @@
 { question: "To solve quickly on a calculator, you <br> <br> a. multiply 2 x 3.5 x 3.5 <br> b. add 2 + 3.12 + 3.12 <br> c. multiply 2 x 3.12 x 3.12", answer: "a", imageUrl: "https://i.postimg.cc/TYr01FFP/Screenshot-2024-12-12-at-4-22-11-AM.png" },
 { question: "What formula can you use to find the surface area of a square pyramid? <br> a. v = lwh <br>b. sa = 2(lh + lw + hw) <br>c. sa = 2bs + b^2", answer: "c", imageUrl: "https://i.postimg.cc/SNNLQR6g/Screenshot-2024-12-12-at-4-34-29-AM.png" },
 // distance on a coordinate plane 84%
-{ question: "What is the distance between (-6, 3) and (7, 3)<br><br>Look at the numbers that are different. <br> Same signs, subtract absolute values<br> Different Signs, subtract absolute values<br>", answer: "13", imageUrl: "" },
+{ question: "What is the distance between (-6, 3) and (7, 3)<br><br>Look at the numbers that are different. <br> Same signs, subtract absolute values<br> Different Signs, add absolute values<br>", answer: "13", imageUrl: "" },
 //ma.6.ar.2.1 86% what makes an inequality true
 { question: "<br> What value would make j + 2 < 17 true? <br><br> -15 <br><br> 15 <br><br> 20", answer: "-15", imageUrl: "" },
 { question: "Point K is found at <br> a. (-1, 0) <br> b. (-0.6, 1) <br> c. (-0.6, -1) <br> d. (-1, -0.6)", answer: "d", imageUrl: "https://i.postimg.cc/7Y7hkXvD/Screenshot-2024-12-11-at-6-24-28-AM.png" },
@@ -2687,9 +2701,96 @@ question: "What is the GCF of 15 and 25? <br> a) 1 <br> b) 5 <br> c) 10 <br> d) 
 
 
 
+//identifying the independent and dependent variables
+  {"question":"<br> IF Emily gives belly rubs to her dog Gibson for X hours, THEN Gibson will receive Y belly rubs, what is the independent variable?","answer":"X (Hours spent)","options":["X (Hours spent)","Y (Belly rubs received)"],"imageUrl":""},
+  {"question":"<br>IF Emily gives belly rubs to her dog Gibson for X hours, THEN Gibson will receive Y belly rubs, what is the dependent variable?","answer":"Y (Belly rubs received)","options":["X (Hours spent)","Y (Belly rubs received)"],"imageUrl":""},
+  {"question":"<br>IF Ellen grooms horses for H hours, THEN she will groom N horses. What is the independent variable?","answer":"H (Hours spent grooming)","options":["H (Hours spent grooming)","N (Number of horses groomed)"],"imageUrl":""},
+  {"question":"<br>IF Ellen grooms horses for H hours, THEN she will groom N horses. What is the dependent variable?","answer":"N (Number of horses groomed)","options":["H (Hours spent grooming)","N (Number of horses groomed)"],"imageUrl":""},
+  {"question":"<br>IF Dylan wins F fencing matches in a tournament, THEN he will have a total of W wins. What is the independent variable?","answer":"F (Fencing matches played)","options":["F (Fencing matches played)","W (Total wins)"],"imageUrl":""},
+  {"question":"<br>IF Dylan wins F fencing matches in a tournament, THEN he will have a total of W wins. What is the dependent variable?","answer":"W (Total wins)","options":["F (Fencing matches played)","W (Total wins)"],"imageUrl":""},
+
+  {"question":"<br>What axis is the independent variable graphed on?","answer":"X-axis","options":["X-axis","Y-axis"],"imageUrl":""},
+  {"question":"<br>What axis is the dependent variable graphed on?","answer":"Y-axis","options":["X-axis","Y-axis"],"imageUrl":""},
+  {"question":"<br>When graphing the number of belly rubs Gibson receives based on the hours Emily spends rubbing his belly, which variable is on the Y-axis?","answer":"Belly rubs received","options":["Hours spent","Belly rubs received"],"imageUrl":""},
+  {"question":"<br>When graphing the number of hours spent playing Fortnite against the number of victories, which variable is on the X-axis?","answer":"Hours spent playing","options":["Hours spent playing","Number of victories"],"imageUrl":""},
+
+//constant of proportionality from a table 
+{"question": "<br>Ellen is grooming horses at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Hours</th><th>1</th><th>2</th><th>3</th><th>5</th></tr><tr><td>Horses Groomed</td><td>3</td><td>6</td><td>9</td><td>15</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "3","imageUrl": ""},
+{"question": "<br>Bianca and Ellen are texting each other at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Minutes</th><th>10</th><th>20</th><th>30</th><th>60</th></tr><tr><td>Texts Exchanged</td><td>6</td><td>12</td><td>18</td><td>36</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "3/5","imageUrl": ""},
+{"question": "<br>Grace is reading Percy Jackson chapters at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Minutes</th><th>30</th><th>60</th><th>90</th><th>120</th></tr><tr><td>Chapters Read</td><td>4</td><td>8</td><td>12</td><td>16</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "2/15","imageUrl": ""},
+{"question": "<br>Dylan is competing in fencing tournaments with a consistent win rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Tournaments</th><th>1</th><th>2</th></tr><tr><td>Matches Won</td><td>5</td><td>10</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "5","imageUrl": ""},
+{"question": "<br>Massimo is scoring goals in soccer games at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Games</th><th>2</th><th>4</th><th>6</th><th>10</th></tr><tr><td>Goals Scored</td><td>3</td><td>6</td><td>9</td><td>15</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "3/2","imageUrl": ""},
+{"question": "<br>Ben is earning coins in Roblox at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Hours</th><th>2</th><th>4</th><th>5</th></tr><tr><td>Coins Earned</td><td>600</td><td>1200</td><td>1500</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "300","imageUrl": ""},
+{"question": "<br>Maxwell is sending memes at a constant rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Minutes</th><th>20</th><th>40</th><th>60</th><th>120</th></tr><tr><td>Memes Sent</td><td>8</td><td>16</td><td>24</td><td>48</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "2/5","imageUrl": ""},
+{"question": "<br>Anna is walking dogs at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Days</th><th>1</th><th>7</th><th>14</th><th>21</th></tr><tr><td>Dogs Walked</td><td>2</td><td>14</td><td>28</td><td>42</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "2","imageUrl": ""},
+{"question": "<br>Jackson is practicing free throws at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Minutes</th><th>15</th><th>30</th><th>45</th><th>60</th></tr><tr><td>Free Throws</td><td>10</td><td>20</td><td>30</td><td>40</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "2/3","imageUrl": ""},
+{"question": "<br>Anthony is building houses in Minecraft at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Hours</th><th>3</th><th>6</th><th>9</th><th>12</th></tr><tr><td>Houses Built</td><td>5</td><td>10</td><td>15</td><td>20</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "5/3","imageUrl": ""},
+{"question": "<br>Bella is playing with her dog Luna at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Minutes</th><th>10</th><th>20</th><th>30</th><th>60</th></tr><tr><td>Times Toy is Thrown</td><td>7</td><td>14</td><td>21</td><td>42</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "7/10","imageUrl": ""},
+{"question": "<br>Abigail is scoring touchdowns in flag football at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Games</th><th>1</th><th>4</th><th>8</th><th>12</th></tr><tr><td>Touchdowns</td><td>2</td><td>8</td><td>16</td><td>24</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "2","imageUrl": ""},
+{"question": "<br>Emily is giving belly rubs to her dog Gibson at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Hours</th><th>1</th><th>6</th><th>12</th><th>24</th></tr><tr><td>Belly Rubs</td><td>3</td><td>18</td><td>36</td><td>72</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "3","imageUrl": ""},
+{"question": "<br>Henry is rushing yards in football at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Games</th><th>1</th><th>5</th><th>8</th><th>10</th></tr><tr><td>Yards Rushed</td><td>80</td><td>400</td><td>640</td><td>800</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "80","imageUrl": ""},
+{"question": "<br>Isabella is serving volleyballs at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Practices</th><th>1</th><th>2</th><th>3</th><th>4</th></tr><tr><td>Serves</td><td>15</td><td>30</td><td>45</td><td>60</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "15","imageUrl": ""},
+{"question": "<br>Grayson is petting dogs at the park at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Weeks</th><th>1</th><th>4</th><th>6</th><th>8</th></tr><tr><td>Dogs Petted</td><td>5</td><td>20</td><td>30</td><td>40</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "5","imageUrl": ""},
+{"question": "<br>Ben is winning Fortnite matches at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Weeks</th><th>1</th><th>4</th><th>6</th><th>8</th></tr><tr><td>Wins</td><td>2</td><td>8</td><td>12</td><td>16</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "2","imageUrl": ""},
+{"question": "<br>Hande is asking ChatGPT questions at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Days</th><th>1</th><th>30</th><th>180</th><th>365</th></tr><tr><td>Questions Asked</td><td>10</td><td>300</td><td>1800</td><td>3650</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "10","imageUrl": ""},
+{"question": "<br>Jaelynn is spiking the volleyball at a steady rate. <br>Find the constant of proportionality (k)<br>\n\n<table border='1' style='border-collapse: collapse; text-align: center;'><tr><th>Matches</th><th>1</th><th>4</th><th>6</th><th>8</th></tr><tr><td>Spikes</td><td>6</td><td>24</td><td>36</td><td>48</td></tr></table><br>Fraction answers need to be simplified.\n\n", "answer": "6","imageUrl": ""},
 
 
 
+
+
+//square roots
+    {"question":"What is √64 = ± ______","answer":"8","imageUrl":""},
+    {"question":"What is √81 = ± ______","answer":"9","imageUrl":""},
+    {"question":"What is √144 = ± ______","answer":"12","imageUrl":""},
+    {"question":"What is √49 = ± ______","answer":"7","imageUrl":""},
+    {"question":"What is √121 = ± ______","answer":"11","imageUrl":""},
+    {"question":"What is √36 = ± ______","answer":"6","imageUrl":""},
+    {"question":"What is √16 = ± ______","answer":"4","imageUrl":""},
+    {"question":"What is √25 = ± ______","answer":"5","imageUrl":""},
+    {"question":"What is √100 = ± ______","answer":"10","imageUrl":""},
+    {"question":"What is √9 = ± ______","answer":"3","imageUrl":""},
+
+
+
+
+//translations
+  {"question": "A triangle is flipped over the y-axis. What transformation occurred?", "answer": "Reflection", "options": ["Rotation", "Reflection", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A square is moved 5 units up and 3 units to the right. What transformation occurred?", "answer": "Translation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A circle is reduced to half its original size. What transformation occurred?", "answer": "Dilation", "options": ["Dilation", "Reflection", "Translation", "Rotation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A pentagon is rotated 90° clockwise about the origin. What transformation occurred?", "answer": "Rotation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A hexagon is reflected over the x-axis. What transformation occurred?", "answer": "Reflection", "options": ["Translation", "Rotation", "Reflection", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A rectangle is enlarged by a factor of 3. What transformation occurred?", "answer": "Dilation", "options": ["Reflection", "Dilation", "Rotation", "Translation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A triangle is rotated 180° around the center of a circle. What transformation occurred?", "answer": "Rotation", "options": ["Reflection", "Translation", "Rotation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A line segment is shifted 7 units to the left. What transformation occurred?", "answer": "Translation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A parallelogram is reflected across a diagonal line. What transformation occurred?", "answer": "Reflection", "options": ["Dilation", "Translation", "Rotation", "Reflection"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A circle is scaled up by a factor of 2. What transformation occurred?", "answer": "Dilation", "options": ["Translation", "Rotation", "Reflection", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "What transformation makes an image smaller or larger?", "answer": "Dilation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "What transformation flips an image?", "answer": "Reflection", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A transformation that turns an image around a fixed point is a _______", "answer": "Rotation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "A transformation that slides an image is a _______", "answer": "Translation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/PrhwgSph/TRANSFORMATIONS.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Translation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/3NjJYLVh/translation3.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Rotation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/441g4hnX/rotation2.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Reflection", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/7Y7QPFK0/reflection4.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Dilation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/L6M3DnVg/dilation2.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Translation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/k4Vn6YbK/translation1.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Rotation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/ht7bsKR5/rotation1.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Reflection", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/yYnNkbQp/reflection3.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Dilation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/t4h23F6c/dilation1.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Reflection", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/X78jRKmy/reflection2.gif"},
+  {"question": "What transformation is shown in the image?", "answer": "Dilation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/kgGmL0Wk/dilation1.gif"},
+  {"question": "What kind of translation is this?", "answer": "Rotation", "options": ["Reflection", "Rotation", "Translation", "Dilation"], "imageUrl": "https://i.postimg.cc/br2p89tK/ohio-rotation.gif"},
+
+
+
+//difference of squares with one of them being five squared
+{ question: "(25)(35) = ", answer: "875", imageUrl: "https://i.postimg.cc/6pDtTgkZ/Screenshot-2025-01-29-at-7-04-26-AM.png" },
+{ question: "(35)(45) = ", answer: "1575", imageUrl: "https://i.postimg.cc/BnFR76z8/Screenshot-2025-01-29-at-7-07-12-AM.png" },
+{ question: "(45)(55) = ", answer: "2475", imageUrl: "https://i.postimg.cc/tJL2FdpB/Screenshot-2025-01-29-at-7-07-18-AM.png" },
+{ question: "(55)(65) = ", answer: "3575", imageUrl: "https://i.postimg.cc/cJb9sGPq/Screenshot-2025-01-29-at-7-07-24-AM.png" },
+{ question: "(65)(75) = ", answer: "4875", imageUrl: "https://i.postimg.cc/L4CX2C8t/Screenshot-2025-01-29-at-7-07-32-AM.png" },
+{ question: "(75)(85) = ", answer: "6375", imageUrl: "https://i.postimg.cc/66nX1MG6/Screenshot-2025-01-29-at-7-07-38-AM.png" },
+{ question: "(85)(95) = ", answer: "8075", imageUrl: "https://i.postimg.cc/cCg6Vwwy/Screenshot-2025-01-29-at-7-07-47-AM.png" },
 
 
 
